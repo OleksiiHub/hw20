@@ -1,6 +1,9 @@
 :root 
     --primary-color: #E15252
-    --shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px
+    --secondary-color: #333333
+    --quaternary-color: #4F4F4F
+    --white-color:  #FFFFFF
+    --shadow: rgba(0, 0, 0, 0.35) 5px 15px
 
 body
     font-family: 'TT Hoves', Times, serif
@@ -14,10 +17,8 @@ body
     padding: 0
     height: 840px
     &_position
-section
-    height: 840px
 footer
-    heught:840px
+    height:840px
 h1, h2, h3
     margin: 0
 .style-header
@@ -37,10 +38,11 @@ h1, h2, h3
     &_h2
         font-size: 47px
         line-height: 48px 
-        font-style: normal    
+        font-style: normal  
+        color: var(--secondary-color)  
 .btn
     background: var(--primary-color)
-    color: #fff
+    color: var(--white-color)
     font-weight: 700
     font-size: 18px
     line-height: 22px    
@@ -50,6 +52,10 @@ h1, h2, h3
     padding: 12px 42px
     &:hover
         box-shadow:var(--shadow)
+    &_position
+        display: flex
+        align-items: center
+        margin: 62px auto
 .main-picture
     background: url('../access/main.png') no-repeat center (center / cover)
     width: 698px
@@ -71,6 +77,90 @@ h1, h2, h3
         line-height: 100%
         text-align: center
         color: var(--primary-color)
+.d-flex
+    padding: 40px
+    display: flex
+    justify-content: center
+    gap: 83px
+.style_picture
+    border: 12px solid var(--primary-color)
+    border-radius: 50%
+.card
+    width: 246px
+    height: 362px
+    &_description
+        font-style: normal
+        font-weight: 700
+        font-size: 18px
+        line-height: 26px
+        text-align: center
+        color: var(--secondary-color)
+        padding: 20px 0 10px 0
+    &_text
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color:var(--quaternary-color)
+.section_picture
+    background: url('../access/main2.png') no-repeat center (center / cover)
+    height: 840px
+.section
+    &_title
+        font-style: normal
+        font-weight: 700
+        font-size: 64px
+        line-height: 64px
+        text-align: center
+        padding: 0 0 10px 0
+        color: var(--white-color)
+        margin: 0
+    &_p
+        margin: 0
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 100%
+        text-align: center
+        color: var(--secondary-color)
+    &_position
+        padding: 50px 0 50px
+.company
+    font-family: 'Vampiro One', cursive
+    font-style: normal
+    font-weight: 400
+    font-size: 46px
+    line-height: 100%
+    margin: 0
+    &_group
+        width: 352px
+        padding: 139px 0 0 878px
+    &_description
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 17px
+        color: var(--quaternary-color)
+.border_buttom
+    border-bottom: 1px solid var(--primary-color)
+    width: 90px
+    padding: 0px 0 20px
+.position
+    margin-top: 42px
+.footer
+    background: url('../access/footer.png') no-repeat center (center / cover)
+    z-index: 1
+    &_picture
+            background: url('../access/Rectangle8.png') no-repeat center (center / cover)
+            width: 1204px
+            height: 648px
+            margin: 0 auto
+            z-index: 2
+
+
+
+
 
 
 
