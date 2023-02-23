@@ -3,8 +3,7 @@
     --secondary-color: #333333
     --quaternary-color: #4F4F4F
     --white-color:  #FFFFFF
-    --shadow: rgba(0, 0, 0, 0.35) 5px 15px
-
+    --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px
 body
     font-family: 'TT Hoves', Times, serif
     margin: 0
@@ -50,8 +49,6 @@ h1, h2, h3
     border: 0
     font-style: normal
     padding: 12px 42px
-    &:hover
-        box-shadow:var(--shadow)
     &_position
         display: flex
         align-items: center
@@ -116,6 +113,8 @@ h1, h2, h3
         padding: 0 0 10px 0
         color: var(--white-color)
         margin: 0
+        &_padding
+            padding-top: 50px
     &_p
         margin: 0
         font-style: normal
@@ -151,6 +150,11 @@ h1, h2, h3
 .footer
     background: url('../access/footer.png') no-repeat center (center / cover)
     z-index: 1
+    &_contact
+        padding-left: 110px
+        display: flex
+        justify-content: start
+        gap: 100px
     &_picture
         background: url('../access/Rectangle8.png') no-repeat center (center / cover)
         width: 1204px
@@ -160,6 +164,42 @@ h1, h2, h3
     &_picture2
         background: url('../access/footer2.png') no-repeat center (center / cover)
         height: 92px
+.form_fix
+    display: flex
+    justify-content: start
+    gap: 20px
+    padding-bottom: 50px
+a
+    text-decoration: none
+    color: var(--white-color)
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+
+    &:hover
+        text-decoration: underline
+        color: var(--secondary-color)
+button
+    &:hover
+        box-shadow: var(--shadow)
+input
+    margin: 0 0 14px
+.input_size
+    width: 374px
+    border-radius: 61px
+    height: 56px
+    border: 0px
+    background: var(--white-color)
+    margin: 0 0 14px
+    padding-left: 20px
+    font-size: 26px
+form
+    width: 374px
+.style_send
+    border: 1px solid var(--white-color)
+    &:hover
+        border-color: var(--secondary-color)
 
 
 
